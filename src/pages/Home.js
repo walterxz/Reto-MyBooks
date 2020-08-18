@@ -8,10 +8,11 @@ const Home = async () => {
         ${books.books.map(book=>`
         <article class="Character-item">
             <a href="#/">
-                <img src="${book.image}" alt="${character.title}">
+                <img src="${book.image}" alt="${book.title}">
                 <h2>${book.title}</h2>
-                <span>Favorito</span>  
             </a>
+            <span class="heart"></span>  
+            <span class="heart-empty"></span>  
         </article>
         `).join('')}
     </div>

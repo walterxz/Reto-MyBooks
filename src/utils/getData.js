@@ -1,10 +1,9 @@
-const API = "https://api.itbook.store/1.0/new";
+const API = "books.json";
 
 const getData = async (id) => {
   const apiURL = id ? `${API}${id}` : API;
   try {
     const response = await fetch(apiURL);
-    console.log(response)
     const data = await response.json();
     return data;
   } catch (error) {

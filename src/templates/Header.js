@@ -12,6 +12,9 @@ const Header = () => {
                 <a href="#/about/">
                     About
                 </a>
+                <a href="#/favorites/">
+                    Mis favoritos
+                </a>
             </div>
         </div>
     `;
