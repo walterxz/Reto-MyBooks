@@ -24,7 +24,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
           },
         ],
       },
@@ -37,7 +37,10 @@ module.exports = {
       filename: "./index.html",
     }),
     new CopyWebpackPlugin({
-      patterns: [{ from: "./src/styles/styles.css", to: "" }],
+      patterns: [
+        { from: "./src/styles/styles.css", to: "" },
+        { from: "books.json", to: "" },
+      ],
     }),
   ],
 };
